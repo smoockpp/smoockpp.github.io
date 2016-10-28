@@ -1,5 +1,4 @@
 
-
 <div id="home" class="home">
   <h1>Nikolay Nikolov</h1>
   <h2>Front End Developer</h2>
@@ -7,16 +6,12 @@
 </div>
 
 <script>
+
 $(document).ready(function() {
-
-    $('.home h1').show('slide', {direction: 'left'}, 500);
-    setTimeout(function() {
-      $('.home h2').show('slide', {direction: 'right'}, 500);
-    }, 500);
-
-
+  $('.home h1').show('slide', {direction: 'left', }, 500);
+  setTimeout(function() {
+    $('.home h2').show('slide', {direction: 'right', easing: 'swing'}, 500);
+  }, 500);
 });
-
-
 
 </script>

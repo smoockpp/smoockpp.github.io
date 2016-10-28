@@ -9,9 +9,10 @@
 <script>
 $(document).ready(function() {
   setTimeout(function() {
-    $('#myself h2').show('slide', {direction: 'left'}, 500);
-    $('#myself h3').show('slide', {direction: 'left'}, 600);
-    $('#myself h4').show('slide', {direction: 'left'}, 700);
+    $('.myself').show('slide', {direction: 'left', easing: 'swing'}, 200);
+    $('.myself h2').show('slide', {direction: 'right', easing: 'swing'}, 500);
+    $('.myself h3').show('slide', {direction: 'left', easing: 'swing'}, 600);
+    $('.myself h4').show('slide', {direction: 'right', easing: 'swing'}, 700);
   },600);
 
 });
