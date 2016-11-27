@@ -1,0 +1,38 @@
+<div id="home" class="home">
+  <h1>Nikolay Nikolov</h1>
+  <h2><span class="text-change">Front End</span><span class="text-change hidden">JavaScript</span> Developer</h2>
+
+</div>
+
+<script>
+
+
+
+var homeAnimation = {
+  homeDiv: document.getElementById('home'),
+  left: function() {
+    this.homeDiv.style.left = '50%';
+  }
+};
+
+var spanChange = {
+  span: document.getElementsByClassName('text-change'),
+  change: function() {
+    Array.from(spanChange.span).forEach(function(x) {
+      x.classList.toggle('hidden');
+    });
+
+  }
+}
+
+setTimeout(function() {
+  homeAnimation.left();
+  function start() {
+    spanChange.change();
+    setTimeout(start, 4000);
+  }
+  start();
+}, 1000);
+
+
+</script>

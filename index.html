@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<link href="styles/application.min.css" rel="stylesheet" type="text/css" />
+	<link href="styles/application.css" rel="stylesheet" type="text/css" />
 
 	<title>nnCreatives - Nikolay Nikolov</title>
 </head>
@@ -15,25 +15,26 @@
   <!-- <video autoplay loop muted class="bgvideo" id="bgvideo">
     <source src="data/videos/bg.mp4" type="video/mp4">
   </video> -->
-  <a class="logo" href="#">nn<span class="bold">Creatives</span></a>
-	<nav>
+<div id="wrapper">
+	<header>
+		<div id="slider" class="container">
 
-      <div class="nav-btn">
-				<div class="closed">
+
+
+	  </div>
+	</header>
+	<nav id="nav">
+			<a id="logo" class="logo" href="#"> nn <span class="bold"> Creatives </span></a>
+      <div class="nav-btn" id="nav-btn">
+				<div class="closed" id="closed">
 					<div class="nav-dash dash1"></div>
 					<div class="nav-dash dash2"></div>
 					<div class="nav-dash dash3"></div>
 				</div>
 			</div>
-
-			<ul class="nav">
-        <div class="shape-1">
-          <span class="line"></span>
-          <span class="box"></span>
-          <span class="line"></span>
-        </div>
-				<li class="nav-item">
-					<a href="#home" class="nav-link active">home</a>
+			<ul id="nav-list">
+				<li class="nav-item active">
+					<a href="#home" class="nav-link ">home</a>
 				</li>
 				<li class="nav-item" >
 					<a href="#myself" class="nav-link">myself?</a>
@@ -48,16 +49,14 @@
 
 
 	</nav>
-  <div class="se-pre-con"></div>
-  <main>
 
+  <div id="se-pre-con"></div>
 
+</div>
 
-  </main>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+	<!-- <script type="text/javascript" src="scripts/jquery.min.js"></script> -->
 	<script type="text/javascript" src="scripts/app.min.js"></script>
 
 </body>
